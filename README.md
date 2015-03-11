@@ -6,7 +6,7 @@ This is just a bare-bones django project with a setup.py script that will instal
 You can install it with the following command
 
 ```
-pip install --upgrade  git+https://github.com/robdmc/vanilla.git
+git clone git@github.com:robdmc/vanilla.git
 cd vanilla
 provision.sh
 ```
