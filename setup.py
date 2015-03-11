@@ -23,8 +23,9 @@ setup(
         'Private :: Do Not Upload',
     ],
     install_requires=[
-        'django>=1.6.5,<1.7',
-        'numpy>=1.8.0',
+        'django',
+        'numpy',
+        'scipy',
         'pandas>=0.14.0',
         'django-manager-utils>=0.7.1',
         'django-extensions',
@@ -33,6 +34,9 @@ setup(
         'tornado',
         'ipython',
         'jsonschema',
+        'matplotlib',
+        'seaborn',
+        'statsmodels',
     ],
     tests_require=[
     ],
