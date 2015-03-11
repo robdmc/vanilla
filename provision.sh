@@ -5,10 +5,14 @@ virtualenv env
 . ./env/bin/activate
 
 pip install -e .
+
+rm -rf ./.git
 echo .  "`pwd`/env/bin/activate && cd `pwd`" > ~/rcvanilla.sh 
 echo
 echo
 echo This project can now be activated by running the command
 echo . ~/rcvanilla.sh 
+echo
+
 
 
