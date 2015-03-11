@@ -7,4 +7,6 @@ You can install it with the following command
 
 ```
 pip install --upgrade  git+https://github.com/robdmc/vanilla.git
+cd vanilla
+provision.sh
 ```
