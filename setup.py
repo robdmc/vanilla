@@ -26,6 +26,7 @@ setup(
         'django',
         'numpy',
         'scipy',
+        'patsy',
         'pandas>=0.14.0',
         'django-manager-utils>=0.7.1',
         'django-extensions',
