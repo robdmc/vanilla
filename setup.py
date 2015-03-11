@@ -2,22 +2,9 @@
 import re
 from setuptools import setup, find_packages
 
-
-def get_version():
-    """
-    Extracts the version number from the version.py file.
-    """
-    VERSION_FILE = 'brain/version.py'
-    mo = re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', open(VERSION_FILE, 'rt').read(), re.M)
-    if mo:
-        return mo.group(1)
-    else:
-        raise RuntimeError('Unable to find version string in {0}.'.format(VERSION_FILE))
-
-
 setup(
     name='vanilla',
-    version=get_version(),
+    version='0.1',
     description='Plain vanilla dango project',
     long_description='plain vanilla project',
     url='',
@@ -39,7 +26,13 @@ setup(
         'django>=1.6.5,<1.7',
         'numpy>=1.8.0',
         'pandas>=0.14.0',
-        'django-manager-utils>=0.7.1'
+        'django-manager-utils>=0.7.1',
+        'django-extensions',
+        'jinja2',
+        'pyzmq',
+        'tornado',
+        'ipython',
+        'jsonschema',
     ],
     tests_require=[
     ],
